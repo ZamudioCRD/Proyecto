@@ -1,0 +1,13 @@
+footer {
+    background-color: black;
+    color: blanchedalmond;
+    width: 100%;
+}
+
+nav {
+    background-color: red;
+    color: yellow;
+    /*position: fixed;*/
+    width: 100%;
+    text-align: center;
+}
