@@ -1,13 +1,38 @@
+html {
+    background-image: url(https://images8.alphacoders.com/104/thumb-1920-1044788.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    background-color: #cb21408c;
+    color: rgb(0, 60, 255);
+    width: 100%;
+    margin-top: -60px;
+}
+
 footer {
     background-color: black;
     color: blanchedalmond;
     width: 100%;
 }
 
-nav {
-    background-color: red;
-    color: yellow;
-    /*position: fixed;*/
-    width: 100%;
-    text-align: center;
+
+.tarjeta {
+    box-sizing: content-box;
+    display: flex;
+    align-items:flex-end;
+    border-radius: 18px;
+    margin: 70px auto;
+    width: 200px;
+}
+
+.name {
+    text-transform: capitalize;
+    color: black;
+    margin-top: 70px;
+    font-size: 50px;
 }
