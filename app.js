@@ -1,27 +1,29 @@
 const init = () => {
-
-    fetch("https://digimon-api.herokuapp.com/api/digimon")
-    .then((respuesta) => {
+  
+    fetch('https://pokeapi.co/api/v2/pokemon')
+      .then((respuesta) => {
         return respuesta.json();
-    })
-
-    .then((datos) => {
+      })
+      .then((datos) => {
+        console.log('DATOS', datos)
         const personajes = datos.results;
+        console.log(personajes)
         const section = document.querySelector('section');
         let info = '';
-
-        for (let i = 0; i < Array.length; index++) {
-            console.log(personajes[i].name);
-            listaNombres += `
-                <div>
-                    <p>Name: ${personajes[i].name}</p>
-                    <p>Gender: ${personajes[i].gender}</p>
-                    <p>Origen: ${personajes[i].origen}</p>
-                    <hr>
-                <div>
+        let contadorParaImagen = 0;
+  
+        for (let i = 0; i < personajes.length; i++) {
+            contadorParaImagen + i;
+            info += `
+              <div class="tarjeta">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png" height="200" width="200">
+                <p class="name">${personajes[i].name}</p>
+                <a href="${personajes[i].url}">Mas info.</a>
+              </div>
             `
-        }
-    })
-}
-
-document.onload = init();
+        }   
+        return section.innerHTML = info;
+      })
+  }
+  
+  document.onload = init();
