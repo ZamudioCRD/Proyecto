@@ -8,7 +8,6 @@ html {
 
 nav {
     position: fixed;
-    background-color: #cb21408c;
     color: rgb(0, 60, 255);
     width: 100%;
     margin-top: -60px;
@@ -24,15 +23,13 @@ footer {
 .tarjeta {
     box-sizing: content-box;
     display: flex;
-    align-items:flex-end;
-    border-radius: 18px;
     margin: 70px auto;
     width: 200px;
 }
 
 .name {
     text-transform: capitalize;
-    color: black;
-    margin-top: 70px;
+    color: rgb(233, 65, 23);
     font-size: 50px;
+    font-weight: bold;
 }
